@@ -73,6 +73,10 @@
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li><a href="../">HOME</a></li>
+            <li><a class="active" href="../about">ABOUT US</a></li>
+            <li><a href="../first">FIRST</a></li>
+            <li><a href="../media">MEDIA</a></li>
+            <li><a href="../sponsors">SPONSORS</a></li>
             <li><a href="../contact">CONTACT</a></li>
           </ul>
         </div><!-- /.nav-collapse -->
@@ -92,15 +96,15 @@
         </div>
       </div>
     </div><!-- /.container -->
-	
-        <div class="container">
+		  
+		      <div class="container">
           <table class="nav-tabs" cellspacing="0">
             <tr>
-              <td><a href="../">HOME</a></td>
-              <td><a class="active" href="../about">ABOUT US</a></td>
-              <td><a href="../first">FIRST</a></td>
-              <td><a href="../media">MEDIA</a></td>
-              <td><a href="../sponsors">SPONSORS</a></td>
+              <td><a class="active" href="#team" data-toggle="tab">TEAM</a></td>
+              <td><a name="first" href="#mentors" data-toggle="tab">MENTORS</a></td>
+              <td><a name="team" href="#robots" data-toggle="tab">ROBOTS</a></td>
+              <td><a name="donation" href="#outreach" data-toggle="tab">OUTREACH</a></td>
+              <td><a name="media" href="#school" data-toggle="tab">SCHOOL</a></td>
             </tr>
           </table>
 
@@ -108,11 +112,11 @@
         </div>
       </div>
     </div><!-- /.container -->
-    <div class="tab-content">
-<div class="tab-pane active slide-left in" id="about_tab">
+ <div class="tab-content">
+      <div class="tab-pane active slide-left in" id="team">
         <!-- Services Section -->
-      
-        <div id="about" class="section">
+        <div id="services" class="section clear">
+          <!-- No arrow down in the first section --><!---EDIT BELOW HERE--->
           <div class="container">
 
             <div class="content">
@@ -120,7 +124,7 @@
                 <div class="col-md-6 col-sm-6 col-xs-12 pull-right">
                   <div class="wrapper">
                     <h3>The Team</h3>
-                    <p>We're students from the L&amp;N STEM Academy with a passion to learn and innovate. We participate in the regional FIRST Robotics competition every year. Although the FIRST competition is about building a robot, many of our members specialize in other fields such as design, business management, media production, and programming.</p>
+                    <p>We're students from the L&amp;N STEM Academy with a passion to learn and innovate. We participate in the regional FIRST Robotics Competition every year. Although the FIRST competition is about building a robot, many of our members specialize in other fields such as design, business management, media production, and programming.</p>
                     <div class="social-media">
                       <a href="https://twitter.com/LNSTEMpunks" target="_blank"><i class="fa fa-twitter"></i></a>
                       <a href="https://www.facebook.com/LNRobotics" target="_blank"><i class="fa fa-facebook"></i></a>
@@ -166,16 +170,30 @@
               </div>
             </div><!-- /.content -->
           </div>
-
-          <div class="container single gray">
+		</div><!---EDIT ABOVE HERE--->
+	</div>
+		
+      <div class="tab-pane" id="mentors">
+        <!-- Services Section -->
+        <div id="services" class="section clear">
+          <!-- No arrow down in the first section --> <!---EDIT BELOW HERE--->
+<div class="container single">
             <div class="content">
               <div class="text-center">
-                <h2 class="title single"><span class="fa fa-coffee"></span>COACHES AND MENTORS</h2>
+                <h2 class="title"><span class="fa fa-coffee"></span>COACHES AND MENTORS</h2>
+              </div>
+              <div class="row">
+                <div class="col-md-2 col-sm-2 col-xs-12"></div>
+                <div class="col-md-8 col-sm-8 col-xs-12">
+                  <p class="description">Our excellent mentors and coaches assist our team in a wide variety of fields.
+                    </p>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-12"></div>
               </div>
             </div><!-- /.content -->
           </div>
 
-          <div class="container">
+          <div class="container gray">
             <!-- <div class="arrow-down centered inner-right"></div> -->
 
             <div class="content">
@@ -215,7 +233,7 @@
             </div>
           </div>-->
 		  
-		   <div class="container gray">
+		   <div class="container">
             <div class="arrow-down centered inner-left"></div>
 		  <div class="content">
               <div class="row single">
@@ -235,7 +253,7 @@
             </div>
           </div>
 
-          <div class="container">
+          <div class="container gray">
             <div class="arrow-down centered inner-right"></div>
 
             <div class="content">
@@ -255,7 +273,7 @@
               </div>
             </div><!-- /.content -->
           </div>
-          <div class="container gray">
+          <div class="container">
             <div class="arrow-down centered inner-left"></div>
 			
 			<div class="content">
@@ -276,7 +294,7 @@
             </div><!-- /.content -->
           </div>
 		  
-		      <div class="container">
+		      <div class="container gray">
             <div class="arrow-down centered inner-right"></div>
 			
 			<div class="content">
@@ -318,7 +336,7 @@
             </div>
           </div>-->
 		  
-           <div class="container gray"> <!--change to regular-->
+           <div class="container"> <!--change to regular-->
 		   <div class="arrow-down centered inner-left"></div>
             <div class="content">
               <div class="row single">
@@ -338,7 +356,7 @@
             </div><!-- /.content -->
           </div>
 		  
-		  		      <div class="container">
+		  		      <div class="container gray">
             <div class="arrow-down centered inner-right"></div>
 			
 			<div class="content">
@@ -359,7 +377,7 @@
             </div><!-- /.content -->
           </div>
 		  
-          <div class="container gray">
+          <div class="container">
             <div class="arrow-down centered inner-right"></div>
 
             <div class="content">
@@ -380,25 +398,569 @@
             </div><!-- /.content -->
           </div>
         </div>
-        <!-- Work -->
-        <div id="work" class="section">
-          <div class="container last">
-            
-            <div class="text-center">
-              <h2 class="title"><span class="fa fa-desktop"></span>LAB</h2>
-            </div>
-            <div class="row">
-              <div class="col-md-2 col-sm-2 col-xs-12"></div>
-              <div class="col-md-8 col-sm-8 col-xs-12">
-                <p class="description">Our Lab has grown exponentially in the past few years. Gaining more equipment, people, and even more stories to tell. If you want to help us grow our lab, please consider donating.</p><br /><br /><br />
-              </div>
-              <div class="col-md-2 col-sm-2 col-xs-12"></div>
-            </div>
 
-          </div><!-- /.container --> 
+      </div> <!---EDIT ABOVE HERE--->
+      <div class="tab-pane" id="robots">
+        <!-- Services Section -->
+        <div id="services" class="section clear">
+          <!-- No arrow down in the first section --> <!---EDIT BELOW HERE--->
+<div class="container single">
+            <div class="content">
+              <div class="text-center">
+                <h2 class="title"><span class="fa fa-gear fa-spin"></span>ROBOTS</h2>
+              </div>
+              <div class="row">
+                <div class="col-md-2 col-sm-2 col-xs-12"></div>
+                <div class="col-md-8 col-sm-8 col-xs-12">
+                  <p class="description">As a 4 year FIRST Robotics Competition team, our team has developed many robots.
+                    </p>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-12"></div>
+              </div>
+            </div><!-- /.content -->
+          </div>
         </div>
 
-      </div>
+        <!-- Features Section -->
+        <div id="team" class="section">
+				 		 <div class="container gray"> <!--change to regular-->
+		   <div class="arrow-down centered"></div>
+            <div class="content">
+              <div class="row single">
+                <div class="col-md-4 col-sm-6 col-xs-12 pull-right">
+                  <div class="portrait-wrapper">
+                    <img class="portrait slide-in" src="AA.jpg">
+                  </div>
+                </div>
+                <div class="col-md-8 col-sm-6 col-xs-12 pull-right">
+                  <div class="wrapper">
+                    <h3>Baron von Shrimp</h3>
+                    <p>Baron von Shrimp competed in Aerial Assist, the 2014 game of the FIRST Robotics Competition. The robot shot large exercise sized balls into goals placed high above the field.</p>
+                    <p><i>Retired in 2015</i></p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.content -->
+          </div>
+				 		 <div class="container"> <!--change to regular-->
+		   <div class="arrow-down centered inner-right"></div>
+            <div class="content">
+              <div class="row single">
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                  <div class="portrait-wrapper">
+                    <img class="portrait slide-in" src="CB.jpg">
+                  </div>
+                </div>
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                  <div class="wrapper">
+                    <h3>Chair-Bot</h3>
+                    <p>Chair-Bot was created to show at events; it has a chair on the top for small children to ride around on.</p>
+                    <p><i>Active</i></p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.content -->
+          </div>
+		 		 <div class="container gray"> <!--change to regular-->
+		   <div class="arrow-down centered inner-left"></div>
+            <div class="content">
+              <div class="row single">
+                <div class="col-md-4 col-sm-6 col-xs-12 pull-right">
+                  <div class="portrait-wrapper">
+                    <img class="portrait slide-in" src="UA.jpg">
+                  </div>
+                </div>
+                <div class="col-md-8 col-sm-6 col-xs-12 pull-right">
+                  <div class="wrapper">
+                    <h3>2013</h3>
+                    <p>Our 2013 robot competed in Ultimate Ascent, the 2013 game of the FIRST Robotics Competition. The robot shot frisbees into goals placed high above the field, and had the ability to climb pyramids.</p>
+                    <p><i>Retired in 2014</i></p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.content -->
+          </div>
+		 <div class="container"> <!--change to regular-->
+		   <div class="arrow-down centered inner-right"></div>
+            <div class="content">
+              <div class="row single">
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                  <div class="portrait-wrapper">
+                    <img class="portrait slide-in" src="RR.jpg">
+                  </div>
+                </div>
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                  <div class="wrapper">
+                    <h3>2012</h3>
+                    <p>Our 2012 robot competed in Rebound Rumble, the 2012 game of the FIRST Robotics Competition. The robot shot basketball into hoops placed high above the field.</p>
+                    <p><i>Retired in 2013</i></p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.content -->
+          </div>
+		  		<div class="container gray"> <!--change to regular-->
+		   <div class="arrow-down centered inner-left"></div>
+            <div class="content">
+              <div class="row single">
+                <div class="col-md-4 col-sm-6 col-xs-12 pull-right">
+                  <div class="portrait-wrapper">
+                    <img class="portrait slide-in" src="VB.jpg">
+                  </div>
+                </div>
+                <div class="col-md-8 col-sm-6 col-xs-12 pull-right">
+                  <div class="wrapper">
+                    <h3>Vet-Bot</h3>
+                    <p>Our Vet-Bot was the team's first creation, taken to and shown at the Veteran's Day Parade.</p>
+                    <p><i>Retired in 2012</i></p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.content -->
+          </div>
+
+          </div>
+         
+        </div><!---EDIT ABOVE HERE--->
+      
+	  <div class="tab-pane" id="outreach">
+        <!-- Services Section -->
+        <div id="pricing" class="section clear">
+          <!-- No arrow down in the first section --><!---EDIT BELOW HERE--->
+          <div class="container">
+            <div class="content">
+              <div class="text-center">
+                <h2 class="title"><span class="fa fa-share-alt"></span>OUTREACH</h2>
+              </div>
+              <div class="row">
+                <div class="col-md-2 col-sm-2 col-xs-12"></div>
+                <div class="col-md-8 col-sm-8 col-xs-12">
+                  <p class="description">Our team actively engages with the East Tennessee community to promote STEM education and the FIRST programs.
+                    </p>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-12"></div>
+              </div>
+            </div><!-- /.content -->
+          </div>
+        <div class="container gray"> <!--change to regular-->
+            <div class="content">
+              <div class="row single">
+                <div class="col-md-4 col-sm-6 col-xs-12 pull-right">
+                  <div class="portrait-wrapper">
+                    <img class="portrait slide-in" src="VB.jpg">
+                  </div>
+                </div>
+                <div class="col-md-8 col-sm-6 col-xs-12 pull-right">
+                  <div class="wrapper">
+                    <h3>Veteran's Day Parade</h3>
+                    <p></p>
+                    <p><i>2012</i></p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.content -->
+          </div>
+		  <div class="container gray"> <!--change to regular-->
+            <div class="content">
+              <div class="row single">
+                <div class="col-md-4 col-sm-6 col-xs-12 pull-right">
+                  <div class="portrait-wrapper">
+                    <img class="portrait slide-in" src="VB.jpg">
+                  </div>
+                </div>
+                <div class="col-md-8 col-sm-6 col-xs-12 pull-right">
+                  <div class="wrapper">
+                    <h3>Vine Magnet Showcase</h3>
+                    <p></p>
+                    <p><i>2013</i></p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.content -->
+          </div>
+		  <div class="container gray"> <!--change to regular-->
+            <div class="content">
+              <div class="row single">
+                <div class="col-md-4 col-sm-6 col-xs-12 pull-right">
+                  <div class="portrait-wrapper">
+                    <img class="portrait slide-in" src="VB.jpg">
+                  </div>
+                </div>
+                <div class="col-md-8 col-sm-6 col-xs-12 pull-right">
+                  <div class="wrapper">
+                    <h3>Knox County Schools Career Fair</h3>
+                    <p></p>
+                    <p><i>2013</i></p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.content -->
+          </div>
+		  <div class="container gray"> <!--change to regular-->
+            <div class="content">
+              <div class="row single">
+                <div class="col-md-4 col-sm-6 col-xs-12 pull-right">
+                  <div class="portrait-wrapper">
+                    <img class="portrait slide-in" src="VB.jpg">
+                  </div>
+                </div>
+                <div class="col-md-8 col-sm-6 col-xs-12 pull-right">
+                  <div class="wrapper">
+                    <h3>Veteran's Day Parade</h3>
+                    <p></p>
+                    <p><i>2013</i></p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.content -->
+          </div>
+		  <div class="container gray"> <!--change to regular-->
+            <div class="content">
+              <div class="row single">
+                <div class="col-md-4 col-sm-6 col-xs-12 pull-right">
+                  <div class="portrait-wrapper">
+                    <img class="portrait slide-in" src="VB.jpg">
+                  </div>
+                </div>
+                <div class="col-md-8 col-sm-6 col-xs-12 pull-right">
+                  <div class="wrapper">
+                    <h3>Smoky Mountain Regional Business Summit</h3>
+                    <p></p>
+                    <p><i>2014</i></p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.content -->
+          </div>
+		  <div class="container gray"> <!--change to regular-->
+            <div class="content">
+              <div class="row single">
+                <div class="col-md-4 col-sm-6 col-xs-12 pull-right">
+                  <div class="portrait-wrapper">
+                    <img class="portrait slide-in" src="VB.jpg">
+                  </div>
+                </div>
+                <div class="col-md-8 col-sm-6 col-xs-12 pull-right">
+                  <div class="wrapper">
+                    <h3>Children's Festival of Reading</h3>
+                    <p></p>
+                    <p><i>2014</i></p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.content -->
+          </div>
+		  <div class="container gray"> <!--change to regular-->
+            <div class="content">
+              <div class="row single">
+                <div class="col-md-4 col-sm-6 col-xs-12 pull-right">
+                  <div class="portrait-wrapper">
+                    <img class="portrait slide-in" src="VB.jpg">
+                  </div>
+                </div>
+                <div class="col-md-8 col-sm-6 col-xs-12 pull-right">
+                  <div class="wrapper">
+                    <h3>Steampunk Carnivale</h3>
+                    <p></p>
+                    <p><i>2014</i></p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.content -->
+          </div>
+		  <div class="container gray"> <!--change to regular-->
+            <div class="content">
+              <div class="row single">
+                <div class="col-md-4 col-sm-6 col-xs-12 pull-right">
+                  <div class="portrait-wrapper">
+                    <img class="portrait slide-in" src="VB.jpg">
+                  </div>
+                </div>
+                <div class="col-md-8 col-sm-6 col-xs-12 pull-right">
+                  <div class="wrapper">
+                    <h3>Shades of Development</h3>
+                    <p></p>
+                    <p><i>2014</i></p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.content -->
+          </div>
+		  <div class="container gray"> <!--change to regular-->
+            <div class="content">
+              <div class="row single">
+                <div class="col-md-4 col-sm-6 col-xs-12 pull-right">
+                  <div class="portrait-wrapper">
+                    <img class="portrait slide-in" src="VB.jpg">
+                  </div>
+                </div>
+                <div class="col-md-8 col-sm-6 col-xs-12 pull-right">
+                  <div class="wrapper">
+                    <h3>Radio Interview</h3>
+                    <p></p>
+                    <p><i>2014</i></p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.content -->
+          </div>
+		  <div class="container gray"> <!--change to regular-->
+            <div class="content">
+              <div class="row single">
+                <div class="col-md-4 col-sm-6 col-xs-12 pull-right">
+                  <div class="portrait-wrapper">
+                    <img class="portrait slide-in" src="VB.jpg">
+                  </div>
+                </div>
+                <div class="col-md-8 col-sm-6 col-xs-12 pull-right">
+                  <div class="wrapper">
+                    <h3>Robotics Revolution</h3>
+                    <p></p>
+                    <p><i>2014</i></p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.content -->
+          </div>
+		  <div class="container gray"> <!--change to regular-->
+            <div class="content">
+              <div class="row single">
+                <div class="col-md-4 col-sm-6 col-xs-12 pull-right">
+                  <div class="portrait-wrapper">
+                    <img class="portrait slide-in" src="VB.jpg">
+                  </div>
+                </div>
+                <div class="col-md-8 col-sm-6 col-xs-12 pull-right">
+                  <div class="wrapper">
+                    <h3>Ice Bucket Challenge</h3>
+                    <p></p>
+                    <p><i>2014</i></p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.content -->
+          </div>
+		  <div class="container gray"> <!--change to regular-->
+            <div class="content">
+              <div class="row single">
+                <div class="col-md-4 col-sm-6 col-xs-12 pull-right">
+                  <div class="portrait-wrapper">
+                    <img class="portrait slide-in" src="VB.jpg">
+                  </div>
+                </div>
+                <div class="col-md-8 col-sm-6 col-xs-12 pull-right">
+                  <div class="wrapper">
+                    <h3>Green Magnet Showcase</h3>
+                    <p></p>
+                    <p><i>2014</i></p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.content -->
+          </div>
+		  <div class="container gray"> <!--change to regular-->
+            <div class="content">
+              <div class="row single">
+                <div class="col-md-4 col-sm-6 col-xs-12 pull-right">
+                  <div class="portrait-wrapper">
+                    <img class="portrait slide-in" src="VB.jpg">
+                  </div>
+                </div>
+                <div class="col-md-8 col-sm-6 col-xs-12 pull-right">
+                  <div class="wrapper">
+                    <h3>Ice Bears Exhibition Game</h3>
+                    <p></p>
+                    <p><i>2014</i></p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.content -->
+          </div>
+		  <div class="container gray"> <!--change to regular-->
+            <div class="content">
+              <div class="row single">
+                <div class="col-md-4 col-sm-6 col-xs-12 pull-right">
+                  <div class="portrait-wrapper">
+                    <img class="portrait slide-in" src="VB.jpg">
+                  </div>
+                </div>
+                <div class="col-md-8 col-sm-6 col-xs-12 pull-right">
+                  <div class="wrapper">
+                    <h3>Engineer's Day</h3>
+                    <p></p>
+                    <p><i>2014</i></p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.content -->
+          </div>
+		  <div class="container gray"> <!--change to regular-->
+            <div class="content">
+              <div class="row single">
+                <div class="col-md-4 col-sm-6 col-xs-12 pull-right">
+                  <div class="portrait-wrapper">
+                    <img class="portrait slide-in" src="VB.jpg">
+                  </div>
+                </div>
+                <div class="col-md-8 col-sm-6 col-xs-12 pull-right">
+                  <div class="wrapper">
+                    <h3>Knox County Schools Magnet Showcase</h3>
+                    <p></p>
+                    <p><i>2014</i></p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.content -->
+          </div>
+		  <div class="container gray"> <!--change to regular-->
+            <div class="content">
+              <div class="row single">
+                <div class="col-md-4 col-sm-6 col-xs-12 pull-right">
+                  <div class="portrait-wrapper">
+                    <img class="portrait slide-in" src="VB.jpg">
+                  </div>
+                </div>
+                <div class="col-md-8 col-sm-6 col-xs-12 pull-right">
+                  <div class="wrapper">
+                    <h3>Veteran's Day Parade</h3>
+                    <p></p>
+                    <p><i>2014</i></p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.content -->
+          </div>
+		  <div class="container gray"> <!--change to regular-->
+            <div class="content">
+              <div class="row single">
+                <div class="col-md-4 col-sm-6 col-xs-12 pull-right">
+                  <div class="portrait-wrapper">
+                    <img class="portrait slide-in" src="VB.jpg">
+                  </div>
+                </div>
+                <div class="col-md-8 col-sm-6 col-xs-12 pull-right">
+                  <div class="wrapper">
+                    <h3>ETEBA Conference</h3>
+                    <p></p>
+                    <p><i>2014</i></p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.content -->
+          </div>
+		  <div class="container gray"> <!--change to regular-->
+            <div class="content">
+              <div class="row single">
+                <div class="col-md-4 col-sm-6 col-xs-12 pull-right">
+                  <div class="portrait-wrapper">
+                    <img class="portrait slide-in" src="VB.jpg">
+                  </div>
+                </div>
+                <div class="col-md-8 col-sm-6 col-xs-12 pull-right">
+                  <div class="wrapper">
+                    <h3>Sequoyah Elementary Visit</h3>
+                    <p></p>
+                    <p><i>2014</i></p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.content -->
+          </div>
+		</div>
+
+
+      </div><!---EDIT ABOVE HERE--->
+      <div class="tab-pane" id="school">
+        <!-- Services Section -->
+        <div id="services" class="section clear">
+          <!-- No arrow down in the first section --><!---EDIT BELOW HERE--->
+           <div class="container">
+            <div class="content">
+              <div class="text-center">
+                <h2 class="title"><span class="fa fa-graduation-cap"></span>SCHOOL</h2>
+              </div>
+              <div class="row">
+                <div class="col-md-2 col-sm-2 col-xs-12"></div>
+                <div class="col-md-8 col-sm-8 col-xs-12">
+                  <p class="description">Our team is based at the L&N STEM Academy in downtown Knoxville, Tennessee.
+                    </p>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-12"></div>
+              </div>
+            </div><!-- /.content -->
+          </div>
+		  <div class="container gray">
+            <div class="arrow-down centered"></div>
+            
+            <div class="content">
+              <div class="row single">
+                <div class="col-md-6 col-sm-6 col-xs-12 valign">
+                    <img class="img-responsive" src="../school.gif">
+                    <div class="clearfix"></div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 valign">
+                  <h3>L&N STEM Academy</h3>
+                  <p>The L&N STEM Academy was founded in 2011 as a magnet high school focused on the disciplines of science, technology, engineering, and math in the Knox County School system. The school began with Freshman and Sophomore classes, expanding each year to have the first graduating class in 2013-14. The academic program is based on full-year classes, where the maximum course load is 8 simultaneous credits. An integrated curriculum and project-based instruction is made possible by the 1:1 technology implemented throughout the academy. </p>
+                  <div class="social-media">
+                      <a href="https://twitter.com/LNSTEMAC" target="_blank"><i class="fa fa-twitter"></i></a>
+                      <a href="https://www.facebook.com/LNSTEMAC" target="_blank"><i class="fa fa-facebook"></i></a>
+                      <a href="https://knoxschools.org/landn" target="_blank"><i class="fa fa-globe"></i></a>
+                    </div>
+                </div>
+              </div>
+              
+            </div><!-- /.content -->
+          </div>
+		  <div class="container single">
+            <div class="content">
+              <div class="text-center">
+                <h2 class="title single"><span class="fa fa-bullhorn"></span>PRINCIPAL</h2>
+              </div>
+            </div><!-- /.content -->
+          </div>
+        <div class="container gray"> <!--change to regular-->
+            <div class="content">
+              <div class="row single">
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                  <div class="portrait-wrapper">
+                    <img class="portrait slide-in" src="VB.jpg">
+                  </div>
+                </div>
+                <div class="col-md-8 col-sm-6 col-xs-12 ">
+                  <div class="wrapper">
+                    <h3>Becky Ashe</h3>
+                    <p>Becky Ashe has been the principal of the L&N STEM Academy since it's inception in 2011. Under her guidance, the L&N STEM Academy has grown from under 200 students to 600 from multiple East Tennessee counties.</p>
+                    <p><i>Principal since 2011</i></p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.content -->
+          </div>
+		  <div class="container single">
+            <div class="content">
+              <div class="text-center">
+                <h2 class="title single"><span class="fa fa-desktop"></span>MAKER SPACE</h2>
+              </div>
+            </div><!-- /.content -->
+          </div>
+		  <div class="container gray"> <!--change to regular-->
+            <div class="content">
+              <div class="row single">
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                  <div class="portrait-wrapper">
+                    <img class="portrait slide-in" src="VB.jpg">
+                  </div>
+                </div>
+                <div class="col-md-8 col-sm-6 col-xs-12 ">
+                  <div class="wrapper">
+                    <p>A shared school space, the Maker Space serves as our robotics lab and an area for students to come and build anything they imagine. The Maker Space includes a band saw, chop saw, sander, drill press, and three MakerBot Replicator 3D printers.</p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.content -->
+          </div>
+		</div>
+      </div><!---EDIT ABOVE HERE--->
 
     </div>
     <div class="section bottom clear">
@@ -412,7 +974,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-5 col-sm-5 col-xs-12">
-            <a class="logo clearfix" href="#"><img class="img-responsive" src="resources/logo.png"></a><br/>
+            <a class="logo clearfix" href="#"><img class="img-responsive" src="../resources/logo.png"></a><br/>
             <p class="pull-left clearfix tagline">Get STEMpunked!</p>
             <div class="clearfix"></div>
             <p>We're students from the L&amp;N STEM Academy in downtown Knoxville, Tennessee with a passion to learn and innovate. We participate in the FIRST Robotics Competition each year.</p>
