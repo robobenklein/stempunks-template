@@ -423,26 +423,26 @@
 
         <!-- Features Section -->
         <div id="team" class="section">
-				 		 <div class="container gray"> <!--change to regular-->
+<div class="container gray" style="cursor: pointer; cursor:hand;" data-toggle="collapse" data-target="#BVS"> <!--change to regular-->
 		   <div class="arrow-down centered"></div>
-            <div class="content">
-              <div class="row single">
-                <div class="col-md-4 col-sm-6 col-xs-12 pull-right">
-                  <div class="portrait-wrapper">
-                    <img class="portrait slide-in" src="AA.jpg">
-                  </div>
-                </div>
-                <div class="col-md-8 col-sm-6 col-xs-12 pull-right">
-                  <div class="wrapper">
-                    <h3>Baron von Shrimp</h3>
-                    <p>Baron von Shrimp competed in Aerial Assist, the 2014 game of the FIRST Robotics Competition. The robot shot large exercise sized balls into goals placed high above the field.</p>
-                    <p><i>Retired in 2015</i></p>
-                  </div>
-                </div>
-              </div>
-            </div><!-- /.content -->
-          </div>
-				 		 <div class="container"> <!--change to regular-->
+    <div class="content">
+    <div class="row single">
+		<div class="col-md-4 col-sm-6 col-xs-12 pull-right">
+				 <div class="portrait-wrapper">
+                    <img class="portrait slide-in" src="CB.jpg">
+					</div>
+					</div>
+					<div class="col-md-8 col-sm-6 col-xs-12 pull-right">
+					<h3>Baron von Shrimp</h3>
+					<div id="BVS" class="collapse out">
+				<p>Baron von Shrimp participated in Aerial Assist, the 2014 FRC game. </p>
+				</div>
+				<p><i>Retired in 2015</i></p>
+				</div>
+			</div>
+	</div>
+	</div>
+				 		 <div class="container" style="cursor: pointer; cursor:hand;" data-toggle="collapse" data-target="#CB"> <!--change to regular-->
 		   <div class="arrow-down centered inner-right"></div>
             <div class="content">
               <div class="row single">
@@ -454,14 +454,16 @@
                 <div class="col-md-8 col-sm-6 col-xs-12">
                   <div class="wrapper">
                     <h3>Chair-Bot</h3>
+					<div id="CB" class="collapse out">
                     <p>Chair-Bot was created to show at events; it has a chair on the top for small children to ride around on.</p>
-                    <p><i>Active</i></p>
-                  </div>
+                    </div>
+					<p><i>Active</i></p>
                 </div>
               </div>
             </div><!-- /.content -->
           </div>
-		 		 <div class="container gray"> <!--change to regular-->
+		  </div>
+		 		 <div class="container gray" style="cursor: pointer; cursor:hand;" data-toggle="collapse" data-target="#UA"> <!--change to regular-->
 		   <div class="arrow-down centered inner-left"></div>
             <div class="content">
               <div class="row single">
@@ -473,14 +475,16 @@
                 <div class="col-md-8 col-sm-6 col-xs-12 pull-right">
                   <div class="wrapper">
                     <h3>2013</h3>
+					<div id="UA" class="collapse out">
                     <p>Our 2013 robot competed in Ultimate Ascent, the 2013 game of the FIRST Robotics Competition. The robot shot frisbees into goals placed high above the field, and had the ability to climb pyramids.</p>
-                    <p><i>Retired in 2014</i></p>
-                  </div>
+                    </div>
+					<p><i>Retired in 2014</i></p>
                 </div>
               </div>
             </div><!-- /.content -->
           </div>
-		 <div class="container"> <!--change to regular-->
+		  </div>
+		 <div class="container" style="cursor: pointer; cursor:hand;" data-toggle="collapse" data-target="#RR"> <!--change to regular-->
 		   <div class="arrow-down centered inner-right"></div>
             <div class="content">
               <div class="row single">
@@ -491,15 +495,17 @@
                 </div>
                 <div class="col-md-8 col-sm-6 col-xs-12">
                   <div class="wrapper">
-                    <h3>2012</h3>
+                    <h3>Da Wood</h3>
+					<div id="RR" class="collapse out">
                     <p>Our 2012 robot competed in Rebound Rumble, the 2012 game of the FIRST Robotics Competition. The robot shot basketball into hoops placed high above the field.</p>
-                    <p><i>Retired in 2013</i></p>
-                  </div>
+                    </div>
+					<p><i>Retired in 2013</i></p>
                 </div>
               </div>
             </div><!-- /.content -->
           </div>
-		  		<div class="container gray"> <!--change to regular-->
+		  </div>
+		  		<div class="container gray" style="cursor: pointer; cursor:hand;" data-toggle="collapse" data-target="#VB"> <!--change to regular-->
 		   <div class="arrow-down centered inner-left"></div>
             <div class="content">
               <div class="row single">
@@ -511,13 +517,15 @@
                 <div class="col-md-8 col-sm-6 col-xs-12 pull-right">
                   <div class="wrapper">
                     <h3>Vet-Bot</h3>
+					<div id="VB" class="collapse out">
                     <p>Our Vet-Bot was the team's first creation, taken to and shown at the Veteran's Day Parade.</p>
+					</div>
                     <p><i>Retired in 2012</i></p>
-                  </div>
                 </div>
               </div>
             </div><!-- /.content -->
           </div>
+		  </div>
 
           </div>
          
@@ -1029,5 +1037,23 @@
        document.body.appendChild(e); 
       } 
     </script> 
+	<script type="text/javascript">
+    jQuery(function ($) {
+        $('.panel-heading span.clickable').on("click", function (e) {
+            if ($(this).hasClass('robot-collapsed')) {
+                // expand the panel
+                $(this).parents('.robot').find('.robot-body').slideDown();
+                $(this).removeClass('robot-collapsed');
+                $(this).find('i').removeClass('fa-chevron-down').addClass('fa-chevron-up');
+            }
+            else {
+                // collapse the panel
+                $(this).parents('.robot').find('.robot-body').slideUp();
+                $(this).addClass('robot-collapsed');
+                $(this).find('i').removeClass('fa-chevron-up').addClass('fa-chevron-down');
+            }
+        });
+    });
+</script>
   </body>
 </html>
