@@ -44,15 +44,7 @@
       <div id="carousel" class="carousel slide">
         
         <div class="carousel-inner">
-          <div class="active item">
-            <img src="../resources/background1.jpg">
-          </div>
-          <div class="item">
-            <img src="../resources/background2.jpg">
-          </div>
-          <div class="item">
-            <img src="../resources/background3.jpg">
-          </div>
+          <img id="bg">
         </div>
         <div class="gradient"></div>
 
@@ -232,10 +224,10 @@
               <div class="text-center">
                 <h2 class="title"><span class="fa fa-newspaper-o"></span>PRESS</h2>
                  </div>
-			 <div class="row">
+	        <div class="row">
                 <div class="col-md-2 col-sm-2 col-xs-12"></div>
                 <div class="col-md-8 col-sm-8 col-xs-12">
-				<p class="description">A list of news stories our team has appeared in.</p>
+				<p class="description">A list of our team's press appearances. Includes newspaper, online, TV, and radio.</p>
                 </div>
                 <div class="col-md-2 col-sm-2 col-xs-12"></div>
               </div>
@@ -381,17 +373,10 @@
         <div id="pricing" class="section clear">
           <!-- No arrow down in the first section --><!---EDIT BELOW HERE--->
          <div class="container single">
+
             <div class="content">
               <div class="text-center">
-                <h2 class="title"><span class="fa fa-paint-brush"></span>BRANDING</h2>
-              </div>
-              <div class="row">
-                <div class="col-md-2 col-sm-2 col-xs-12"></div>
-                <div class="col-md-8 col-sm-8 col-xs-12">
-                  <p class="description">This page provides our team's logo and other assets for members of the public to utilize.
-                    </p>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-12"></div>
+                <h2 class="title single"><span class="fa fa-paint-brush"></span>BRANDING</h2>
               </div>
             </div><!-- /.content -->
           </div>
@@ -658,6 +643,12 @@
        e.setAttribute("src", "//browser-update.org/update.js"); 
        document.body.appendChild(e); 
       } 
+    </script> 
+	 <script type="text/javascript">
+    var images = new Array('../RESOURCES/background1.jpg', '../RESOURCES/background2.jpg', '../RESOURCES/background3.jpg');
+    var l = images.length;
+    var random_no = Math.floor(l*Math.random());
+    document.getElementById("bg").src = images[random_no];
     </script> 
   </body>
 </html>

@@ -40,19 +40,12 @@
   <body class="blue">
 
     <!-- background images -->
+    
     <div class="bg">
       <div id="carousel" class="carousel slide">
-
+        
         <div class="carousel-inner">
-          <div class="active item">
-            <img src="../resources/background1.jpg">
-          </div>
-          <div class="item">
-            <img src="../resources/background2.jpg">
-          </div>
-          <div class="item">
-            <img src="../resources/background3.jpg">
-          </div>
+          <img id="bg">
         </div>
         <div class="gradient"></div>
 
@@ -115,5 +108,17 @@
     <script src="../resources/jquery-1.9.1.min.js"></script>
   <script src="../resources/bootstrap.min.js"></script>
     <script src="../resources/init.js"></script>
+	 <script type="text/javascript">
+    var images = new Array('../RESOURCES/background1.jpg', '../RESOURCES/background2.jpg', '../RESOURCES/background3.jpg');
+    var l = images.length;
+    var random_no = Math.floor(l*Math.random());
+    document.getElementById("bg").src = images[random_no];
+    </script> 
+	<script type="text/javascript">
+    var images = new Array('../RESOURCES/background1.jpg', '../RESOURCES/background2.jpg', '../RESOURCES/background3.jpg');
+    var l = images.length;
+    var random_no = Math.floor(l*Math.random());
+    document.getElementById("bg").src = images[random_no];
+    </script>
   </body>
 </html>
