@@ -910,7 +910,7 @@ body .section.clear {
     line-height: 25px;
 }
 .section p.description {
-    text-align: left;
+    text-align: center;
     color: #888;
     font-size: 18px;
     line-height: 36px;
