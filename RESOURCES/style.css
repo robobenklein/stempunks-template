@@ -1624,8 +1624,7 @@ body.red .social-media a {
     background-color: #CCC;
 }
 .portrait {
-    width: 200px;
-    margin-left: -200px;
+    width: 250px;
     top: 0;
     position: relative;
 }
