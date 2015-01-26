@@ -3698,11 +3698,6 @@ a.thumbnail:hover, a.thumbnail:focus {
   }
 }
 
-@font-face { 
-    font-family: "Oud Warenhuis";
-    src: url('../fonts/Oud Warenhuis.otf');
-}
-
 .progress {
   height: 20px;
   margin-bottom: 20px;

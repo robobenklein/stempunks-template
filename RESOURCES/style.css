@@ -693,7 +693,7 @@ label {
     ;
 }
 .navbar .container a.navbar-brand {
-    font-family: "Oud Warenhuis", Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     text-align: center;
     color: #fff;
     font-size: 30px;
@@ -1490,8 +1490,8 @@ img.placeholder {
     line-height: 100px;
     font-size: 44px;
     margin: 0 auto;
-    -webkit-transition: backgroud-color .25s;
-    transition: backgroud-color .25s;
+    -webkit-transition: background-color .25s;
+    transition: background-color .25s;
 }
 .pricing span.price i {
     position: relative;
@@ -1631,6 +1631,26 @@ body.red .social-media a {
 .portrait.slid {
     top: 0;
 }
+.home-wrapper {
+    margin: 0 auto;
+    height: 120px;
+    width: 220px;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #CCC;
+}
+.branding-wrapper {
+    margin: 0 auto;
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #CCC;
+}
 }
 #contact .container {
 }
@@ -1675,7 +1695,7 @@ body.red .social-media a {
     color: #ccc;
 }
 #footer a.logo {
-    font-family: "Oud Warenhuis", Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     float: left;
     color: #fff;
     font-size: 30px;
@@ -1745,4 +1765,15 @@ width: 100% !important;
     }
 ::-moz-selection {
     background: #0a6117; /* Firefox */
+}
+.sponsor-wrapper {
+    margin: 0 auto;
+    margin-bottom: 40px;
+    height: 380px;
+    width: 380px;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #CCC;
 }
