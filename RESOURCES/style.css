@@ -1633,6 +1633,7 @@ body.red .social-media a {
 }
 .home-wrapper {
     margin: 0 auto;
+	margin-bottom: 40px;
     height: 120px;
     width: 220px;
     overflow: hidden;
@@ -1643,6 +1644,7 @@ body.red .social-media a {
 }
 .branding-wrapper {
     margin: 0 auto;
+	margin-bottom: 40px;
     height: 250px;
     width: 250px;
     overflow: hidden;
