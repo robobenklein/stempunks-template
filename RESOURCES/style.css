@@ -111,9 +111,10 @@ img.horizontal {
     border-top: 40px solid #000;
 }
 .arrow-down.centered {
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
-    border-top: 30px solid #000;
+    top: -2px;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-top: 35px solid #000;
     left: 50%;
     margin-left: -30px;
 }
@@ -353,7 +354,7 @@ span.valign {
 }
 }
 .tab-content {
-    padding-bottom: 80px;
+    padding-bottom: 20px;
 }
 table.nav-tabs {
     border: none;
@@ -916,11 +917,11 @@ body .section.clear {
     line-height: 36px;
 }
 .section .container {
-    overflow: hidden;
     position: relative;
     padding: 100px 0;
     width: 80%;
     background-color: #fcfcfc;
+	top: -1px;
 }
 .section .container.first {
     padding-top: 25px;
@@ -929,7 +930,7 @@ body .section.clear {
     padding-top: 0;
 }
 .section .container.single {
-    padding: 75px 0;
+    padding: 50px 0;
 }
 .section .container.last {
     padding-bottom: 0;
