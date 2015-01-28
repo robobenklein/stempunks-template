@@ -905,7 +905,7 @@ body .section.clear {
     padding-bottom: 80px;
 }
 .section.bottom {
-    margin-bottom: 300px;
+    margin-bottom: 175px;
 }
 .section p {
     line-height: 25px;
@@ -1662,11 +1662,11 @@ body.red .social-media a {
     margin-top: 150px;
     overflow: hidden;
     position: fixed;
-    bottom: 0;
+    bottom: -40px;
     left: 0;
     right: 0;
     z-index: -1;
-    height: 380px;
+    height: 325px;
     background-color: #444;
 }
 #footer .container {
