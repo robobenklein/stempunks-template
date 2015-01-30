@@ -923,6 +923,21 @@ body .section.clear {
     background-color: #fcfcfc;
 	top: -1px;
 }
+.section .container.news {
+    position: relative;
+    padding: 30px 0 20px;
+    width: 80%;
+    background-color: #fcfcfc;
+	top: -1px;
+	border-radius: 2%;
+}
+.section .container.newd {
+    position: relative;
+    padding: 100px 0 200px;
+    width: 80%;
+    background-color: #fcfcfc;
+	top: 100px;
+}
 .section .container.first {
     padding-top: 25px;
 }
@@ -1017,6 +1032,16 @@ span.logo.glyphicon {
 }
 .section .container {
     padding: 50px 0;
+}
+.section .container.news {
+    padding: 15px 0 10px;
+	top: -1px;
+	width: 95%;
+}
+.section .container.newd {
+    padding: 50px 0 100px;
+	top: 50px;
+	width: 95%;
 }
 .section h2 {
     margin-bottom: 35px;
@@ -1460,6 +1485,13 @@ img.placeholder {
 #pricing h2 {
     margin-bottom: 50px;
 }
+.news-wrapper {
+    margin: 0 auto;
+    overflow: hidden;
+    -webkit-border-radius: 25%;
+    -moz-border-radius: 25%;
+    border-radius: 25%;
+}
 .pricing .wrapper h3 i {
     margin-right: 20px;
 }
@@ -1649,9 +1681,9 @@ body.red .social-media a {
     height: 250px;
     width: 250px;
     overflow: hidden;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
+    -webkit-border-radius: 25%;
+    -moz-border-radius: 25%;
+    border-radius: 25%;
     background-color: #CCC;
 }
 }
@@ -1662,11 +1694,11 @@ body.red .social-media a {
     margin-top: 150px;
     overflow: hidden;
     position: fixed;
-    bottom: -40px;
+    bottom: 1px;
     left: 0;
     right: 0;
     z-index: -1;
-    height: 325px;
+    height: 290px;
     background-color: #444;
 }
 #footer .container {
