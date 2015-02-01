@@ -303,6 +303,36 @@ span.valign {
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
 }
+.btn-header {
+    width: 70px;
+    height: 70px;
+    margin-top: 15px;
+    padding: 7px 16px;
+    border: 2px solid #fff;
+    border-radius: 35px;
+    font-size: 40px;
+    color: #fff;
+    background: 0 0;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+@media (max-width: 767px)  {
+.btn-header {
+    width: 0px;
+    height: 0px;
+    margin-top: 0px;
+    padding: 0 0;
+    border: 0px solid #fff;
+    border-radius: 0px;
+    font-size: 0px;
+    color: #fff;
+    background: 0 0;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+}
 .btn:hover {
     color: #fff;
 }
