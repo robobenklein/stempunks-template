@@ -171,6 +171,11 @@ hr.small {
     max-width: 80%;
 }
 }
+@media(min-width: 1500px) {
+.img-landing {
+    max-width: 100%;
+}
+}
 @media(max-width: 767px) {
 .landing {
     display: table;
