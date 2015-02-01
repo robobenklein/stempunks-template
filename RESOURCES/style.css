@@ -289,6 +289,20 @@ span.valign {
     -webkit-transition: .3s;
     transition: .3s;
 }
+.btn-circle {
+    width: 70px;
+    height: 70px;
+    margin-top: 15px;
+    padding: 7px 16px;
+    border: 2px solid #fff;
+    border-radius: 35px;
+    font-size: 40px;
+    color: #fff;
+    background: 0 0;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
 .btn:hover {
     color: #fff;
 }
@@ -463,7 +477,7 @@ body.red .icon-wrapper span.circle {
 body .bg .gradient {
     overflow: hidden;
     position: absolute;
-    top: 0;
+    top: 2px;
     opacity: 1;
     height: 100%;
     width: 100%;
