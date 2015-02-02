@@ -1542,7 +1542,7 @@ img.placeholder {
 }
 .pricing .wrapper {
     position: relative;
-    background-color: #ddd;
+    background-color: rgba(186, 186, 186, 0.43);
     -webkit-transition: .5s;
     transition: .5s;
 }
