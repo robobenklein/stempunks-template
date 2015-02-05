@@ -303,10 +303,10 @@ span.valign {
     transition: background .3s ease-in-out;
 }
 .btn-header {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     margin-top: 15px;
-    padding: 7px 16px;
+    padding: 0px 16px;
     border: 2px solid #fff;
     border-radius: 35px;
     font-size: 40px;
@@ -1623,6 +1623,21 @@ img.placeholder {
 }
 #pricing .row [class*="col-"] {
     padding: 0;
+}
+}
+@media(min-width: 800px) {
+video {  
+   max-width:80%; 
+}
+}
+@media(min-width: 1500px) {
+video {  
+   max-width:100%; 
+}
+}
+@media(max-width: 768px) {
+video {  
+   max-width:70%; 
 }
 }
 #team {
