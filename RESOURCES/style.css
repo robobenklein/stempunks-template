@@ -996,6 +996,13 @@ body .section.clear {
     background-color: #fcfcfc;
 	top: 100px;
 }
+.section .container.outr {
+    position: relative;
+    padding: 50px 0;
+    width: 80%;
+    background-color: #fcfcfc;
+	top: -2px;
+}
 .section .container.first {
     padding-top: 25px;
 }
