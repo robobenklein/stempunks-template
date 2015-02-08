@@ -55,6 +55,10 @@ h3 {
     margin: 0 0 15px 0;
     letter-spacing: .5px;
 }
+h4 {
+    margin: 0 0 15px 0;
+    letter-spacing: .5px;
+}
 hr {
     border-color: #999;
     margin: 10px 0;
@@ -93,6 +97,8 @@ img.horizontal {
     display: table-cell;
     vertical-align: middle;
     float: none;
+	margin-left: auto;
+	margin-right: auto;
 }
 @media (max-width: 767px)  {
     .valign {
@@ -440,7 +446,7 @@ table.nav-tabs {
 .bg {
     position: absolute;
     top: 0;
-    height: 150%;
+    height: 200%;
     width: 100%;
 }
 .bg img {
@@ -1101,6 +1107,15 @@ span.logo.glyphicon {
 .section .container.news {
     padding: 15px 0 10px;
 	top: -1px;
+	width: 95%;
+}
+.section .container.gs {
+	width: 95%;
+}
+.section .container.gert{
+	width: 95%;
+}
+.section .container.outr {
 	width: 95%;
 }
 .section .container.newd {
