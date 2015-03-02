@@ -842,7 +842,7 @@ label {
     font-family: "Montserrat", Helvetica, Arial, sans-serif;
     height: 50px;
     display: block;
-    letter-spacing: .5px;
+    letter-spacing: -1px;
     line-height: 50px;
     margin: 0 0 0 30px;
     padding: 0;
