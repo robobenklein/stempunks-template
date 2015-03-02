@@ -446,7 +446,7 @@ table.nav-tabs {
 .bg {
     position: absolute;
     top: 0;
-    height: 200%;
+    height: 100%;
     width: 100%;
 }
 .bg img {
@@ -1802,7 +1802,7 @@ body.red .social-media a {
     clear: both;
     list-style: none;
     line-height: 25px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 #footer a {
     color: #eee;
