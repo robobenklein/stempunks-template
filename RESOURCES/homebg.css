@@ -3,4 +3,11 @@
     top: 0;
     height: 200%;
     width: 100%;
+    background: url(../bg.webm) no-repeat center center scroll;
+}
+video#bgvid {
+position: static; right: 0; bottom: 0;
+min-width: 100%; min-height: 100%;
+width: auto; height: auto; z-index: -100;
+background-size: cover;
 }
