@@ -1,9 +1,8 @@
 .bg {
     position: absolute;
-    top: 0;
-    height: 200%;
+    top: -10;
+    height: 150%;
     width: 100%;
-    background: url(../bg.webm) no-repeat center center scroll;
 }
 video#bgvid {
 position: static; right: 0; bottom: 0;
