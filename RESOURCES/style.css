@@ -81,11 +81,6 @@ span.valign{display:inline-block;height:100%;vertical-align:middle;}
 .container{width:80%;padding:0;}
 .row{margin-left:0;margin-right:0;}
 .row.last{margin-bottom:0;}
-.slide-in{-webkit-transition:.5s;transition:.5s;}
-.slide-in.left{left:200px;}
-.slide-in.left.slid{left:0;}
-.slide-in.right{right:200px;}
-.slide-in.right.slid{right:0;}
 @media (max-width:767px){.slide-in.left, .slide-in.right{margin-top:80px;left:0;right:0;}
 }
 .tab-content{padding-bottom:20px;}
@@ -398,8 +393,7 @@ img.placeholder{width:100%;height:100%;}
 #team h3{display:inline-block;padding-bottom:6px;}
 }
 .portrait-wrapper{}
-.portrait{position:absolute;left:50%;margin-left:-125px;top:-50px;width:250px;margin-bottom:20px;overflow:hidden;-webkit-transition:.5s;transition:.5s;}
-.portrait.slid{top:-50px;}
+.portrait{position:absolute;left:50%;margin-left:-125px;top:50%;width:250px;margin-top:-15px;overflow:hidden;}
 .social-media{padding:0;color:#fff;width:100%;}
 .social-media a{color:#0a6117;padding:0 20px 0 0;display:inline-block;font-size:20px;}
 body.blue .social-media a{color:#0a6117;}
