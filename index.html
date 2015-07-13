@@ -59,7 +59,15 @@
 </div>
 <header id=top class=landing>
 <div class=text-vertical-center>
-<h1><video id=logo src=logo.webm poster=stempunkslogo.png autoplay preload><img class=img-landing src=stempunkslogo.png></img></video></h1>
+<script type="text/javascript">
+var is_chrome = navigator.userAgent.toLowerCase().indexOf('chrome') > -1;
+
+if (is_chrome) {
+document.write('<h1><video id=logo src=logo.webm poster=stempunkslogo.png autoplay preload><img class=img-landing src=stempunkslogo.png></img></video></h1>');
+} else {
+document.write('<h1><img class=img-landing src=stempunkslogo.png></img></h1>');
+}
+</script>
 <br>
 <div class=container></div>
 <br>
