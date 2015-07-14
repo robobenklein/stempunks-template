@@ -214,7 +214,7 @@ body .section.clear{background-color:transparent;}
 .section p.description{text-align:center;color:#888;font-size:18px;line-height:36px;}
 .section .container{position:relative;padding:100px 0;width:80%;background-color:#fcfcfc;top:-2px;}
 .section .container.gs{position:relative;padding:50px 0;width:80%;background-color:#fcfcfc;top:-72px;}
-.section .container.gert{position:relative;padding:40px 0;width:80%;background-color:#fcfcfc;top:-90px;}
+.section .container.gert{position:relative;padding:65px 0;width:80%;background-color:#fcfcfc;top:-120px;}
 .section .container.news{position:relative;padding:30px 0 20px;width:80%;background-color:#fcfcfc;top:30px;border-radius:2%;}
 .section .container.newd{position:relative;padding:100px 0 200px;width:80%;background-color:#fcfcfc;top:100px;}
 .section .container.outr{position:relative;padding:50px 0;width:80%;background-color:#fcfcfc;top:-2px;}
