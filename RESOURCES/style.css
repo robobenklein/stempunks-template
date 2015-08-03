@@ -458,6 +458,6 @@ body.red .social-media a{color:#b52424;}
 #likebox-wrapper *{width:100% !important;}
 .fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style]{width:100% !important;}
 }
-::selection{background:#0a6117;}
-::-moz-selection{background:#0a6117;}
+::selection{background:#dde;}
+::-moz-selection{background:#dde;}
 .sponsor-wrapper{margin:0 auto;margin-bottom:40px;height:380px;width:380px;overflow:hidden;-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;background-color:#CCC;}
