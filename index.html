@@ -93,23 +93,13 @@
   </div>
   <header id=top class=landing>
     <div class=text-vertical-center>
-      <script type="text/javascript">
-        var is_chrome = navigator.userAgent.toLowerCase().indexOf('chrome') > -1;
-
-        if (is_chrome) {
-          document.write('<h1><video id=logo src=logo.webm poster=stempunkslogo.png autoplay preload><img class=img-landing src=stempunkslogo.png></img></video></h1>');
-        } else {
-          document.write('<h1><img class=img-landing src=stempunkslogo.png></img></h1>');
-        }
+      <!-- TODO html-only/splash-overlay.html SECTION -->
+      <script>
+        jQuery(function() {
+          jQuery("#splash-overlay").load("html-only/splash-overlay.html");
+        });
       </script>
-      <br>
-      <div class=container></div>
-      <br>
-      <a href="#services" class="btn btn-circle page-scroll">
-        <p>
-        </p>
-        <span class="fa fa-angle-double-down animated"></span>
-      </a>
+      <div id="splash-overlay"></div>
     </div>
   </header>
   <div class=tab-content>
