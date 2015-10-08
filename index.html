@@ -20,6 +20,11 @@
   <link href='http://fonts.googleapis.com/css?family=Montserrat:400,%20700' rel=stylesheet type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Oxygen:300,%20600' rel=stylesheet type='text/css'>
   <link href="resources/fa/css/font-awesome.min.css" rel=stylesheet>
+  <!-- Primary JS -->
+  <script src="resources/jquery-1.9.1.min.js"></script>
+  <script src="resources/bootstrap.min.js"></script>
+  <script src="resources/jquery.mixitup.min.js"></script>
+  <script src="resources/jquery.easing.min.js"></script>
   <script>
     (function(i, s, o, g, r, a, m) {
       i['GoogleAnalyticsObject'] = r;
@@ -202,13 +207,13 @@
     <div class=container>
       <div class=row>
         <div class="col-md-5 col-sm-5 col-xs-12">
-          <a class="logo clearfix" href="#">
-            <img class=img-responsive src="resources/logo.png">
-          </a>
-          <br/>
-          <p class="pull-left clearfix tagline">Get STEMpunked!</p>
-          <div class=clearfix></div>
-          <p>We're students from the L&amp;N STEM Academy in downtown Knoxville, Tennessee with a passion to learn and innovate. We participate in the FIRST Robotics Competition each year.</p>
+          <!-- TODO html-only/right-footer.html SECTION -->
+          <script>
+            jQuery(function() {
+              jQuery("#footer-bottom-right").load("html-only/right-footer.html");
+            });
+          </script>
+          <div id="footer-bottom-right"></div>
         </div>
         <div class="col-md-1 col-sm-1 col-xs-0 empty"></div>
         <div class="col-md-3 col-sm-3 col-xs-6">
@@ -235,13 +240,9 @@
       </div>
     </div>
   </div>
-  <script src="resources/jquery-1.9.1.min.js"></script>
-  <script src="resources/jquery.mixitup.min.js"></script>
-  <script src="resources/jquery.easing.min.js"></script>
   <script src="resources/grayscale.js"></script>
   <script src="resources/masonry.pkgd.min.js"></script>
   <script src="resources/imagesloaded.pkgd.min.js"></script>
-  <script src="resources/bootstrap.min.js"></script>
   <script src="resources/init.js"></script>
   <script>
     var $buoop = {};
