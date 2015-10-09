@@ -1,7 +1,6 @@
-*.db
-about/people/Thumbs.db
-sponsors/Thumbs.db
-about/people/Thumbs.db
-media/branding/Thumbs.db
-sponsors/friends/Thumbs.db
-sponsors/Thumbs.db
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
