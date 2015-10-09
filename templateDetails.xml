@@ -16,7 +16,6 @@
                 <folder>images</folder>
                 <folder>js</folder>
                 <folder>resources</folder>
-                <folder>less</folder>
 		            <folder>language</folder>
         </files>
         <positions>
@@ -33,19 +32,11 @@
                         <fieldset name="advanced">
                                 <field name="siteLogo" type="media" default=""
                                         label="Site Logo"
-                                        description="Logo to be used at the left of the navbar. Width is always 60px. Best fit: 1w:1.3h ratio." />
-
-                                <field name="headerBackground" type="media" default=""
-                                        label="Header Image"
-                                        description="Picture to use as the header background, if there is a module in the header position." />
-
-                                <field name="footerImage" type="media" default=""
-                                        label="Footer Image"
-                                        description="The Image to use as the footer for the page, if there are modules in the 'footer-image' position." />
+                                        description="Logo to be used at the left of the navbar." />
 
                                 <field name="sitename" type="text" default=""
                                         label="Site Display Name"
-                                        description="The text to display in the navbar next to the Site Logo."
+                                        description="The name of the site."
                                         filter="string" />
 
                                 <field name="twittercards" type="radio" default="0"
@@ -57,12 +48,12 @@
 					                              <option value="0">JNO</option>
                                 </field>
 
-                                <field name="twitter_sitename" type="text" default="@robosane"
+                                <field name="twitter_sitename" type="text" default="@lnstempunks"
                                         label="Twitter site name"
                                         description="The @username to associate this card with for analytics. (include the @)"
                                         filter="string" />
 
-                                <field name="twitter_default-title" type="text" default="Robosane"
+                                <field name="twitter_default-title" type="text" default="L&amp;N STEMpunks"
                                         label="Default Twitter Title"
                                         description="The Title of the article to show when the real one can't be loaded."
                                         filter="string" />
