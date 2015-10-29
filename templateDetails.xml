@@ -31,37 +31,25 @@
         <config>
                 <fields name="params">
                         <fieldset name="advanced">
-                                <field name="siteLogo" type="media" default=""
+                                <field name="siteLogo" type="media" default="templates/stempunk/images/logo.png"
                                         label="Site Logo"
                                         description="Logo to be used at the left of the navbar." />
+
+                                <field name="background1" type="media" default="templates/stempunk/images/background1.jpg"
+                                        label="Background image 1"
+                                        description="Images to be randomly selected for the page background." />
+
+                                <field name="background2" type="media" default="templates/stempunk/images/background2.jpg"
+                                        label="Background image 2"
+                                        description="Images to be randomly selected for the page background." />
+
+                                <field name="background3" type="media" default="templates/stempunk/images/background3.jpg"
+                                        label="Background image 3"
+                                        description="Images to be randomly selected for the page background." />
 
                                 <field name="sitename" type="text" default=""
                                         label="Site Display Name"
                                         description="The name of the site."
-                                        filter="string" />
-
-                                <field name="twittercards" type="radio" default="0"
-                                        label="Enable Twitter Cards"
-                                        description="Choose to enable the addition of the twitter cards meta tags on each page."
-                                        class="btn-group btn-group-yesno"
-                                        >
-                                        <option value="1">JYES</option>
-					                              <option value="0">JNO</option>
-                                </field>
-
-                                <field name="twitter_sitename" type="text" default="@lnstempunks"
-                                        label="Twitter site name"
-                                        description="The @username to associate this card with for analytics. (include the @)"
-                                        filter="string" />
-
-                                <field name="twitter_default-title" type="text" default="L&amp;N STEMpunks"
-                                        label="Default Twitter Title"
-                                        description="The Title of the article to show when the real one can't be loaded."
-                                        filter="string" />
-
-                                <field name="twitter_default-desc" type="text" default=""
-                                        label="Default Twitter Description"
-                                        description="The Description for Twitter to access when one can't be loaded from the article introtext."
                                         filter="string" />
 
                         </fieldset>
