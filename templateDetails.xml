@@ -20,6 +20,7 @@
         </files>
         <positions>
                 <position>position-0</position><!-- Header Backgrounded -->
+                <position>navigation-items</position><!-- Navigation Bar Items -->
                 <position>position-1</position><!-- Navigation -->
                 <position>footer-bottom-left</position><!-- Footer Left -->
                 <position>footer-bottom-right</position><!-- Footer Right -->
