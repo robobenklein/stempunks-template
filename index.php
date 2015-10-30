@@ -30,6 +30,7 @@ $doc->addStyleSheet('templates/'.$this->template.'/css/stylish-portfolio.css');
 $doc->addStyleSheet('templates/'.$this->template.'/css/responsive-video.css');
 $doc->addStyleSheet('templates/'.$this->template.'/css/style.css');
 $doc->addStyleSheet('templates/'.$this->template.'/css/homebg.css');
+$doc->addStyleSheet('templates/'.$this->template.'/resources/fa/css/font-awesome.min.css');
 
 // Add current user information
 $user = JFactory::getUser();
@@ -75,7 +76,6 @@ $doc->addScript('templates/' .$this->template. '/js/js/init.js');
   <link href="css/homebg.css" rel=stylesheet> -->
   <link href='http://fonts.googleapis.com/css?family=Montserrat:400,%20700' rel=stylesheet type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Oxygen:300,%20600' rel=stylesheet type='text/css'>
-  <link href="resources/fa/css/font-awesome.min.css" rel=stylesheet>
   <!-- TODO Library JS includes: may cause issues.
   <script src="js/jquery-1.9.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
@@ -97,7 +97,7 @@ $doc->addScript('templates/' .$this->template. '/js/js/init.js');
     ga('send', 'pageview');
   </script> -->
 </head>
-<script>
+<!-- <script>
   (function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
@@ -106,17 +106,28 @@ $doc->addScript('templates/' .$this->template. '/js/js/init.js');
     js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));
-</script>
+</script> -->
 
 <body class=blue>
   <div class=bg>
     <div id=carousel class="carousel slide">
       <div class=carousel-inner>
+      <?php if ($this->countModules('position-0')) : ?>
         <video poster="images/background1.jpg" id="bgvid" autoplay loop preload>
           <source src=bg.webm type="video/webm">
           <source src=bg.mp4 type="video/mp4">
           <img id=bg>
         </video>
+      <?php else : ?>
+        <img id=bg>
+      <?php endif ?>
+      <script>
+        var images=new Array('<?php echo $this->params->get('background1');?>',
+                             '<?php echo $this->params->get('background2');?>',
+                             '<?php echo $this->params->get('background3');?>');
+        var l=images.length;
+        var random_no=Math.floor(l*Math.random());document.getElementById("bg").src=images[random_no];
+      </script>
       </div>
       <div class=gradient></div>
     </div>
@@ -130,17 +141,19 @@ $doc->addScript('templates/' .$this->template. '/js/js/init.js');
           <span class=icon-bar></span>
         </button>
         <a class=navbar-brand href=.>
-          <img src="images/logo.png">
+          <img src="<?php echo $this->params->get('siteLogo');?>">
         </a>
       </div>
       <div class="collapse navbar-collapse">
         <!-- TODO html-only/navigation-items.html SECTION -->
-        <script>
+        <!-- <script>
           jQuery(function() {
             jQuery("#navigation-items").load("html-only/navigation-items.html");
           });
-        </script>
-        <div id="navigation-items"></div>
+        </script> -->
+        <div id="navigation-items">
+          <jdoc:include type="modules" name="navigation-items" style="none" />
+        </div>
       </div>
     </div>
   </div>
