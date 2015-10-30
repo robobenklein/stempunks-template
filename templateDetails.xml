@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
-<extension version="0.0.1" type="template" client="site">
+<extension version="1.0.2" type="template" client="site">
         <name>STEMpunk</name>
-        <version>0.0.1</version>
+        <version>1.0.2</version>
         <creationDate>October 2015</creationDate>
         <author>Ben Klein</author>
         <authorEmail>robobenklein@robosane.net</authorEmail>
         <copyright>Copyright (C) Ben Klein, 2015.</copyright>
-        <description>The L&amp;N STEMpunks Joomla Template.</description>
+        <description>The STEMpunks Joomla Template.</description>
         <files>
                 <filename>index.php</filename>
                 <filename>component.php</filename>
@@ -17,6 +17,7 @@
                 <folder>js</folder>
                 <folder>resources</folder>
 		            <folder>language</folder>
+                <folder>html</folder>
         </files>
         <positions>
                 <position>position-0</position><!-- Header Backgrounded -->
