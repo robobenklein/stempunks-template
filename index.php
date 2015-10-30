@@ -42,10 +42,10 @@ $doc->addStyleSheet('templates/'.$this->template.'/css/homebg.css');
 $doc->addStyleSheet('templates/'.$this->template.'/resources/fa/css/font-awesome.min.css');
 
 // Stuff that is loaded at bottom of page.
-$doc->addScript('templates/' .$this->template. '/js/js/grayscale.js');
-$doc->addScript('templates/' .$this->template. '/js/js/masonry.pkgd.min.js');
-$doc->addScript('templates/' .$this->template. '/js/js/imagesloaded.pkgd.min.js');
-$doc->addScript('templates/' .$this->template. '/js/js/init.js');
+$doc->addScript('templates/' .$this->template. '/js/grayscale.js');
+$doc->addScript('templates/' .$this->template. '/js/masonry.pkgd.min.js');
+$doc->addScript('templates/' .$this->template. '/js/imagesloaded.pkgd.min.js');
+$doc->addScript('templates/' .$this->template. '/js/init.js');
 
 ?>
 
@@ -229,10 +229,6 @@ $doc->addScript('templates/' .$this->template. '/js/js/init.js');
     </div>
     <!-- TODO Endif Footer Modules -->
   </div>
-  <script src="js/grayscale.js" async></script>
-  <script src="js/masonry.pkgd.min.js" async></script>
-  <script src="js/imagesloaded.pkgd.min.js" async></script>
-  <script src="js/init.js" async></script>
   <script>
     var $buoop = {};
     $buoop.ol = window.onload;
