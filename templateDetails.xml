@@ -17,7 +17,6 @@
                 <folder>js</folder>
                 <folder>resources</folder>
 		            <folder>language</folder>
-                <folder>html</folder>
         </files>
         <positions>
                 <position>position-0</position><!-- Header Backgrounded -->
