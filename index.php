@@ -113,9 +113,9 @@ $doc->addScript('templates/' .$this->template. '/js/js/init.js');
     <div id=carousel class="carousel slide">
       <div class=carousel-inner>
       <?php if ($this->countModules('position-0')) : ?>
-        <video poster="images/background1.jpg" id="bgvid" autoplay loop preload>
-          <source src=bg.webm type="video/webm">
-          <source src=bg.mp4 type="video/mp4">
+        <video poster="templates/<?php echo $this->template;?>/images/background1.jpg" id="bgvid" autoplay loop preload>
+          <source src="templates/<?php echo $this->template;?>/resources/bg.webm" type="video/webm">
+          <source src="templates/<?php echo $this->template;?>/resources/bg.mp4" type="video/mp4">
           <img id=bg>
         </video>
       <?php else : ?>
@@ -141,7 +141,7 @@ $doc->addScript('templates/' .$this->template. '/js/js/init.js');
           <span class=icon-bar></span>
         </button>
         <a class=navbar-brand href=.>
-          <img src="<?php echo $this->params->get('siteLogo');?>">
+          <img src="<?php echo $this->params->get('siteLogo');?>" height="50px">
         </a>
       </div>
       <div class="collapse navbar-collapse">
@@ -160,14 +160,15 @@ $doc->addScript('templates/' .$this->template. '/js/js/init.js');
   <header id=top class=landing>
     <div class=text-vertical-center>
       <!-- TODO html-only/splash-overlay.html SECTION -->
-      <script>
+      <!-- <script>
         jQuery(function() {
           jQuery("#splash-overlay").load("html-only/splash-overlay.html");
         });
       </script>
       <div id="splash-overlay">
         <h1 style="color: #fff;">LOADING...</h1>
-      </div>
+      </div> -->
+      <jdoc:include type="modules" name="position-0" style="none" />
     </div>
   </header>
   <div class=tab-content>
@@ -176,12 +177,17 @@ $doc->addScript('templates/' .$this->template. '/js/js/init.js');
       </div>
       <div id=features class=section>
         <!-- TODO html-only/content.html SECTION -->
-        <script>
+        <!-- <script>
           jQuery(function() {
             jQuery("#content").load("html-only/content.html");
           });
-        </script>
-        <div id="content"></div>
+        </script> -->
+        <div id="content">
+          <jdoc:include type="modules" name="position-3" style="xhtml" />
+          <jdoc:include type="message" />
+          <jdoc:include type="component" />
+          <jdoc:include type="modules" name="position-2" style="none" />
+        </div>
       </div>
     </div>
   </div>
@@ -197,31 +203,37 @@ $doc->addScript('templates/' .$this->template. '/js/js/init.js');
       <div class=row>
         <div class="col-md-5 col-sm-5 col-xs-12">
           <!-- TODO html-only/left-footer.html SECTION -->
-          <script>
+          <!-- <script>
             jQuery(function() {
               jQuery("#footer-bottom-left").load("html-only/left-footer.html");
             });
-          </script>
-          <div id="footer-bottom-left"></div>
+          </script> -->
+          <div id="footer-bottom-left">
+            <jdoc:include type="modules" name="footer-bottom-left" style="none" />
+          </div>
         </div>
         <div class="col-md-1 col-sm-1 col-xs-0 empty"></div>
         <div class="col-md-3 col-sm-3 col-xs-6">
           <!-- TODO html-only/right-footer.html SECTION -->
-          <script>
+          <!-- <script>
             jQuery(function() {
               jQuery("#footer-bottom-right").load("html-only/right-footer.html");
             });
-          </script>
-          <div id="footer-bottom-right"></div>
+          </script> -->
+          <div id="footer-bottom-right">
+            <jdoc:include type="modules" name="footer-bottom-right" style="none" />
+          </div>
         </div>
         <div class="col-md-3 col-sm-3 col-xs-6">
           <!-- TODO html-only/far-right-footer.html SECTION -->
-          <script>
+          <!-- <script>
             jQuery(function() {
               jQuery("#footer-bottom-far-right").load("html-only/far-right-footer.html");
             });
-          </script>
-          <div id="footer-bottom-far-right"></div>
+          </script> -->
+          <div id="footer-bottom-far-right">
+            <jdoc:include type="modules" name="footer-bottom-far-right" style="none" />
+          </div>
         </div>
         </div>
       </div>
@@ -245,12 +257,12 @@ $doc->addScript('templates/' .$this->template. '/js/js/init.js');
       document.body.appendChild(e);
     }
   </script>
-  <script>
+  <!-- <script>
     var images = new Array('images/background1.jpg', 'images/background2.jpg', 'images/background3.jpg');
     var l = images.length;
     var random_no = Math.floor(l * Math.random());
     document.getElementById("bg").src = images[random_no];
-  </script>
+  </script> -->
 </body>
 
 </html>
