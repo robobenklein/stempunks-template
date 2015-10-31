@@ -229,12 +229,6 @@ $doc->addScript('templates/' .$this->template. '/js/init.js');
     </div>
     <!-- TODO Endif Footer Modules -->
   </div>
-  <!-- <script>
-    var images = new Array('images/background1.jpg', 'images/background2.jpg', 'images/background3.jpg');
-    var l = images.length;
-    var random_no = Math.floor(l * Math.random());
-    document.getElementById("bg").src = images[random_no];
-  </script> -->
 </body>
 
 </html>
