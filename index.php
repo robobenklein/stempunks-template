@@ -229,19 +229,6 @@ $doc->addScript('templates/' .$this->template. '/js/init.js');
     </div>
     <!-- TODO Endif Footer Modules -->
   </div>
-  <script>
-    var $buoop = {};
-    $buoop.ol = window.onload;
-    window.onload = function() {
-      try {
-        if ($buoop.ol) $buoop.ol();
-      } catch (e) {}
-      var e = document.createElement("script");
-      e.setAttribute("type", "text/javascript");
-      e.setAttribute("src", "//browser-update.org/update.js");
-      document.body.appendChild(e);
-    }
-  </script>
   <!-- <script>
     var images = new Array('images/background1.jpg', 'images/background2.jpg', 'images/background3.jpg');
     var l = images.length;
