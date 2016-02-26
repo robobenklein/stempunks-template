@@ -174,12 +174,18 @@ $doc->addScript('templates/' .$this->template. '/js/init.js');
           });
         </script> -->
         <div id="content">
-          <jdoc:include type="modules" name="position-3" style="xhtml" />
-          <jdoc:include type="message" />
-          <div class="container newd gray">
+          <?php if ($this->countModules('position-3')) : ?>
+            <div class="container news">
+              <jdoc:include type="modules" name="position-3" style="xhtml" />
+            </div>
+          <?php endif; ?>
+          <div class="container newd">
+            <jdoc:include type="message" />
             <jdoc:include type="component" />
           </div>
-          <jdoc:include type="modules" name="position-2" style="none" />
+          <div class="container gray">
+            <jdoc:include type="modules" name="position-2" style="none" />
+          </div>
         </div>
       </div>
     </div>

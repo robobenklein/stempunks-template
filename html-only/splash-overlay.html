@@ -4,7 +4,7 @@
   var is_chrome = navigator.userAgent.toLowerCase().indexOf('chrome') > -1;
 
   if (is_chrome) {
-    document.getElementById("splash-video-alt").innerHTML = '<h1><video id=logo src=logo.webm poster=templates/stempunk/stempunkslogo.png autoplay preload><img class=img-landing src=templates/stempunk/stempunkslogo.png></img></video></h1>';
+    document.getElementById("splash-video-alt").innerHTML = '<h1><video id=logo src=templates/stempunk/logo.webm poster=templates/stempunk/stempunkslogo.png autoplay preload><img class=img-landing src=templates/stempunk/stempunkslogo.png></img></video></h1>';
   } else {
     document.getElementById("splash-video-alt").innerHTML = '<h1><img class=img-landing src=templates/stempunk/stempunkslogo.png></img></h1>';
   }
