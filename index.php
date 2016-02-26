@@ -28,10 +28,10 @@ $sitename = $app->getCfg('sitename');
 $user = JFactory::getUser();
 
 // Add JavaScript Frameworks
-JHtml::_('jquery.framework');
-JHtml::_('bootstrap.framework');
-//$doc->addScript('templates/' .$this->template. '/js/jquery.js');
-//$doc->addScript('templates/' .$this->template. '/js/bootstrap.js');
+//JHtml::_('jquery.framework');
+//JHtml::_('bootstrap.framework');
+$doc->addScript('templates/' .$this->template. '/js/jquery-1.9.1.min.js');
+$doc->addScript('templates/' .$this->template. '/js/bootstrap.js');
 
 // Add Stylesheets
 $doc->addStyleSheet('templates/'.$this->template.'/css/bootstrap.css');
@@ -43,6 +43,8 @@ $doc->addStyleSheet('templates/'.$this->template.'/resources/fa/css/font-awesome
 
 // Stuff that is loaded at bottom of page.
 $doc->addScript('templates/' .$this->template. '/js/grayscale.js');
+$doc->addScript('templates/' .$this->template. '/js/jquery.mixitup.min.js');
+$doc->addScript('templates/' .$this->template. '/js/jquery.easing.min.js');
 $doc->addScript('templates/' .$this->template. '/js/masonry.pkgd.min.js');
 $doc->addScript('templates/' .$this->template. '/js/imagesloaded.pkgd.min.js');
 $doc->addScript('templates/' .$this->template. '/js/init.js');
