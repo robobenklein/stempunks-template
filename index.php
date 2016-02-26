@@ -31,7 +31,7 @@ $user = JFactory::getUser();
 //JHtml::_('jquery.framework');
 //JHtml::_('bootstrap.framework');
 $doc->addScript('templates/' .$this->template. '/js/jquery-1.9.1.min.js');
-$doc->addScript('templates/' .$this->template. '/js/bootstrap.js');
+$doc->addScript('templates/' .$this->template. '/js/bootstrap.min.js');
 
 // Add Stylesheets
 $doc->addStyleSheet('templates/'.$this->template.'/css/bootstrap.css');
@@ -176,7 +176,9 @@ $doc->addScript('templates/' .$this->template. '/js/init.js');
         <div id="content">
           <jdoc:include type="modules" name="position-3" style="xhtml" />
           <jdoc:include type="message" />
-          <jdoc:include type="component" />
+          <div class="container newd gray">
+            <jdoc:include type="component" />
+          </div>
           <jdoc:include type="modules" name="position-2" style="none" />
         </div>
       </div>
