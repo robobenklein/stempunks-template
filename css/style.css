@@ -2000,5 +2000,5 @@ body.red .social-media a {
     background-color: rgba(0, 0, 0, 0.0);;
 }
 .nav>li>a:hover, .nav>li>a:focus {
-    background-color: none;
+    background-color: transparent;
 }
