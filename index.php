@@ -179,11 +179,11 @@ $doc->addScript('templates/' .$this->template. '/js/init.js');
               <jdoc:include type="modules" name="position-3" style="xhtml" />
             </div>
           <?php endif; ?>
-          <div class="container newd gray">
+          <!-- <div class="container newd gray"> -->
             <jdoc:include type="message" />
             <jdoc:include type="component" />
-          </div>
-          <div class="container gray">
+          <!-- </div> -->
+          <div class="container">
             <div class="arrow-down centered"></div>
             <jdoc:include type="modules" name="position-2" style="none" />
           </div>
