@@ -28,10 +28,10 @@ $sitename = $app->getCfg('sitename');
 $user = JFactory::getUser();
 
 // Add JavaScript Frameworks
-//JHtml::_('jquery.framework');
-//JHtml::_('bootstrap.framework');
-$doc->addScript('templates/' .$this->template. '/js/jquery-1.9.1.min.js');
-$doc->addScript('templates/' .$this->template. '/js/bootstrap.min.js');
+JHtml::_('jquery.framework');
+JHtml::_('bootstrap.framework');
+//$doc->addScript('templates/' .$this->template. '/js/jquery-1.9.1.min.js');
+//$doc->addScript('templates/' .$this->template. '/js/bootstrap.min.js');
 
 // Add Stylesheets
 $doc->addStyleSheet('templates/'.$this->template.'/css/bootstrap.css');
@@ -136,12 +136,6 @@ $doc->addScript('templates/' .$this->template. '/js/init.js');
         </a>
       </div>
       <div class="collapse navbar-collapse">
-        <!-- TODO html-only/navigation-items.html SECTION -->
-        <!-- <script>
-          jQuery(function() {
-            jQuery("#navigation-items").load("html-only/navigation-items.html");
-          });
-        </script> -->
         <div id="navigation-items">
           <jdoc:include type="modules" name="navigation-items" style="none" />
         </div>
@@ -150,15 +144,6 @@ $doc->addScript('templates/' .$this->template. '/js/init.js');
   </div>
   <header id=top class=landing>
     <div class=text-vertical-center>
-      <!-- TODO html-only/splash-overlay.html SECTION -->
-      <!-- <script>
-        jQuery(function() {
-          jQuery("#splash-overlay").load("html-only/splash-overlay.html");
-        });
-      </script>
-      <div id="splash-overlay">
-        <h1 style="color: #fff;">LOADING...</h1>
-      </div> -->
       <jdoc:include type="modules" name="position-0" style="none" />
     </div>
   </header>
@@ -167,12 +152,6 @@ $doc->addScript('templates/' .$this->template. '/js/init.js');
       <div id=services class="section clear">
       </div>
       <div id=features class=section>
-        <!-- TODO html-only/content.html SECTION -->
-        <!-- <script>
-          jQuery(function() {
-            jQuery("#content").load("html-only/content.html");
-          });
-        </script> -->
         <div id="content">
           <?php if ($this->countModules('position-3')) : ?>
             <div class="container news">
@@ -191,7 +170,7 @@ $doc->addScript('templates/' .$this->template. '/js/init.js');
       </div>
     </div>
   </div>
-  <!-- TODO Footer Arrow to close content -->
+
   <div class="section bottom clear">
     <div class="container clear">
       <div class="arrow-down centered"></div>
@@ -202,35 +181,17 @@ $doc->addScript('templates/' .$this->template. '/js/init.js');
     <div class=container>
       <div class=row>
         <div class="col-md-5 col-sm-5 col-xs-12">
-          <!-- TODO html-only/left-footer.html SECTION -->
-          <!-- <script>
-            jQuery(function() {
-              jQuery("#footer-bottom-left").load("html-only/left-footer.html");
-            });
-          </script> -->
           <div id="footer-bottom-left">
             <jdoc:include type="modules" name="footer-bottom-left" style="none" />
           </div>
         </div>
         <div class="col-md-1 col-sm-1 col-xs-0 empty"></div>
         <div class="col-md-3 col-sm-3 col-xs-6">
-          <!-- TODO html-only/right-footer.html SECTION -->
-          <!-- <script>
-            jQuery(function() {
-              jQuery("#footer-bottom-right").load("html-only/right-footer.html");
-            });
-          </script> -->
           <div id="footer-bottom-right">
             <jdoc:include type="modules" name="footer-bottom-right" style="none" />
           </div>
         </div>
         <div class="col-md-3 col-sm-3 col-xs-6">
-          <!-- TODO html-only/far-right-footer.html SECTION -->
-          <!-- <script>
-            jQuery(function() {
-              jQuery("#footer-bottom-far-right").load("html-only/far-right-footer.html");
-            });
-          </script> -->
           <div id="footer-bottom-far-right">
             <jdoc:include type="modules" name="footer-bottom-far-right" style="none" />
           </div>
