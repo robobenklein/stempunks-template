@@ -46,20 +46,20 @@
         "left": "-20px"
       });
     });
-    jQuery(function() {
-      jQuery('.gallery').mixitup({
-        easing: 'snap',
-          resizeContainer: true
-      });
-    });
-    var $container = jQuery('.masonry-grid');
-    $container.imagesLoaded(function() {
-      $container.masonry({
-        itemSelector: '.masonry-grid .item',
-        gutter: 0
-      });
-      jQuery(".masonry-grid .item").css("opacity", "1");
-    });
+//    jQuery(function() {
+//      jQuery('.gallery').mixitup({
+//        easing: 'snap',
+//          resizeContainer: true
+//      });
+//    });
+//    var $container = jQuery('.masonry-grid');
+//    $container.imagesLoaded(function() {
+//      $container.masonry({
+//        itemSelector: '.masonry-grid .item',
+//        gutter: 0
+//      });
+//      jQuery(".masonry-grid .item").css("opacity", "1");
+//    });
     jQuery(".collapse").collapse({
       toggle: false
     })

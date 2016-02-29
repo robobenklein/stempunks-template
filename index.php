@@ -42,11 +42,11 @@ $doc->addStyleSheet('templates/'.$this->template.'/css/homebg.css');
 $doc->addStyleSheet('templates/'.$this->template.'/resources/fa/css/font-awesome.min.css');
 
 // Stuff that is loaded at bottom of page.
-$doc->addScript('templates/' .$this->template. '/js/grayscale.js');
-$doc->addScript('templates/' .$this->template. '/js/jquery.mixitup.min.js');
-$doc->addScript('templates/' .$this->template. '/js/jquery.easing.min.js');
-$doc->addScript('templates/' .$this->template. '/js/masonry.pkgd.min.js');
-$doc->addScript('templates/' .$this->template. '/js/imagesloaded.pkgd.min.js');
+//$doc->addScript('templates/' .$this->template. '/js/grayscale.js');
+//$doc->addScript('templates/' .$this->template. '/js/jquery.mixitup.min.js');
+//$doc->addScript('templates/' .$this->template. '/js/jquery.easing.min.js');
+//$doc->addScript('templates/' .$this->template. '/js/masonry.pkgd.min.js');
+//$doc->addScript('templates/' .$this->template. '/js/imagesloaded.pkgd.min.js');
 $doc->addScript('templates/' .$this->template. '/js/init.js');
 
 ?>
