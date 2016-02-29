@@ -909,9 +909,9 @@ label {
     height: 50px;
     padding-right: 5px;
   }
-  .navbar .navbar-collapse.collapse {
+  /*.navbar .navbar-collapse.collapse {
     display: none;
-  }
+  }*/
 }
 @media (max-width:767px) {
   .navbar {
