@@ -29,9 +29,9 @@ $user = JFactory::getUser();
 
 // Add JavaScript Frameworks
 JHtml::_('jquery.framework');
-JHtml::_('bootstrap.framework');
+//JHtml::_('bootstrap.framework');
 //$doc->addScript('templates/' .$this->template. '/js/jquery-1.9.1.min.js');
-//$doc->addScript('templates/' .$this->template. '/js/bootstrap.min.js');
+$doc->addScript('templates/' .$this->template. '/js/bootstrap.min.js');
 
 // Add Stylesheets
 $doc->addStyleSheet('templates/'.$this->template.'/css/bootstrap.css');
