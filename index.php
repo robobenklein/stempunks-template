@@ -28,10 +28,10 @@ $sitename = $app->getCfg('sitename');
 $user = JFactory::getUser();
 
 // Add JavaScript Frameworks
-//JHtml::_('jquery.framework');
-//JHtml::_('bootstrap.framework');
-$doc->addScript('templates/' .$this->template. '/js/jquery-1.9.1.min.js');
-$doc->addScript('templates/' .$this->template. '/js/bootstrap.min.js');
+JHtml::_('jquery.framework');
+JHtml::_('bootstrap.framework');
+//$doc->addScript('templates/' .$this->template. '/js/jquery-1.9.1.min.js');
+//$doc->addScript('templates/' .$this->template. '/js/bootstrap.min.js');
 
 // Add Stylesheets
 $doc->addStyleSheet('templates/'.$this->template.'/css/bootstrap.css');
@@ -64,7 +64,7 @@ $doc->addScript('templates/' .$this->template. '/js/init.js');
 
   <link href='https://fonts.googleapis.com/css?family=Montserrat:400,%20700' rel="stylesheet" type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Oxygen:300,%20600' rel="stylesheet" type='text/css'>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="templates/<?php echo $this->template;?>/js/bootstrap.min.js" type="text/javascript"></script>
   <!-- TODO Google analytics
   <script>
     (function(i, s, o, g, r, a, m) {
