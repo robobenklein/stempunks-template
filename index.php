@@ -177,11 +177,10 @@ $doc->addScript('templates/' .$this->template. '/js/init.js');
             <jdoc:include type="modules" name="footer-bottom-far-right" style="none" />
           </div>
         </div>
-        </div>
       </div>
     </div>
-    <!-- TODO Endif Footer Modules -->
   </div>
+  <!-- TODO Endif Footer Modules -->
 </body>
 
 </html>
