@@ -740,7 +740,7 @@ label {
   color: #fff;
   font-size: 30px;
   height: 50px;
-  line-height: 50px;
+  /* line-height: 50px; */
   padding: 0;
   margin: 0;
   -webkit-transition: .3s;
@@ -857,9 +857,9 @@ label {
   .navbar .navbar-collapse {
     max-height: none;
   }
-  #navbar .navbar-header {
+  /*#navbar .navbar-header {
     height: 50px;
-  }
+  }*/
   #navbar .navbar-toggle {
     margin: 12px 0 0 0;
   }
