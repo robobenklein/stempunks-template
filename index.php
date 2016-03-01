@@ -88,7 +88,7 @@ $doc->addScript('templates/' .$this->template. '/js/init.js');
       <div class="carousel-inner">
       <?php if ($this->countModules('position-0')) : ?>
         <video poster="templates/<?php echo $this->template;?>/images/background1.jpg" id="bgvid" autoplay loop preload>
-          <source src="templates/<?php echo $this->template;?>/resources/bg.webm" type="video/webm">
+          <source src="http://lnstempunks.org/bg.webm" type="video/webm">
           <img id="bg">
         </video>
       <?php else : ?>
