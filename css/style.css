@@ -740,7 +740,7 @@ label {
   color: #fff;
   font-size: 30px;
   height: 50px;
-  /* line-height: 50px; */
+  line-height: 50px;
   padding: 0;
   margin: 0;
   -webkit-transition: .3s;
@@ -832,7 +832,7 @@ label {
   height: 50px;
   display: block;
   letter-spacing: -1px;
-  /*line-height: 50px;*/
+  line-height: 50px;
   margin: 0 0 0 30px;
   padding: 0;
   color: rgba(255, 255, 255, .7);
@@ -846,7 +846,7 @@ label {
   color: #fff;
 }
 .navbar .menu.nav-pills li i {
-  /*line-height: 50px;*/
+  line-height: 50px;
   margin: 0 10px;
 }
 @media (max-width:992px) {
@@ -865,7 +865,7 @@ label {
   }
   #navbar .navbar-brand, #navbar .navbar-brand i {
     height: 50px;
-    /*line-height: 50px;*/
+    line-height: 50px;
   }
   #navbar .navbar-brand i {
     width: 30px;
