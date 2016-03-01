@@ -64,7 +64,7 @@ $doc->addScript('templates/' .$this->template. '/js/init.js');
 
   <link href='https://fonts.googleapis.com/css?family=Montserrat:400,%20700' rel="stylesheet" type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Oxygen:300,%20600' rel="stylesheet" type='text/css'>
-  <script src="templates/<?php echo $this->template;?>/js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="templates/<?php echo $this->template; ?>/js/bootstrap.min.js" type="text/javascript"></script>
   <!-- TODO Google analytics
   <script>
     (function(i, s, o, g, r, a, m) {
