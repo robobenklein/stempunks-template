@@ -39,7 +39,7 @@ $doc->addStyleSheet('templates/'.$this->template.'/css/stylish-portfolio.css');
 $doc->addStyleSheet('templates/'.$this->template.'/css/responsive-video.css');
 $doc->addStyleSheet('templates/'.$this->template.'/css/style.css');
 $doc->addStyleSheet('templates/'.$this->template.'/css/homebg.css');
-$doc->addStyleSheet('templates/'.$this->template.'/resources/fa/css/font-awesome.min.css');
+$doc->addStyleSheet('templates/'.$this->template.'/fa/css/font-awesome.min.css');
 
 // Stuff that is loaded at bottom of page.
 //$doc->addScript('templates/' .$this->template. '/js/grayscale.js');
@@ -144,10 +144,12 @@ $doc->addScript('templates/' .$this->template. '/js/init.js');
             <jdoc:include type="message" />
             <jdoc:include type="component" />
           <!-- </div> -->
-          <div class="container">
-            <div class="arrow-down centered"></div>
-            <jdoc:include type="modules" name="position-2" style="none" />
-          </div>
+          <?php if ($this->countModules('position-2')) : ?>
+            <div class="container">
+              <div class="arrow-down centered"></div>
+              <jdoc:include type="modules" name="position-2" style="none" />
+            </div>
+          <?php endif; ?>
         </div>
       </div>
     </div>
