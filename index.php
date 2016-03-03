@@ -39,7 +39,7 @@ $doc->addStyleSheet('templates/'.$this->template.'/css/stylish-portfolio.css');
 $doc->addStyleSheet('templates/'.$this->template.'/css/responsive-video.css');
 $doc->addStyleSheet('templates/'.$this->template.'/css/style.css');
 $doc->addStyleSheet('templates/'.$this->template.'/css/homebg.css');
-$doc->addStyleSheet('templates/'.$this->template.'/fa/css/font-awesome.min.css');
+$doc->addStyleSheet('media/'.$this->template.'fa/css/font-awesome.min.css');
 
 // Stuff that is loaded at bottom of page.
 //$doc->addScript('templates/' .$this->template. '/js/grayscale.js');
