@@ -959,7 +959,7 @@ body .section.clear {
   padding: 100px 0;
   width: 80%;
   background-color: #fcfcfc;
-  top: -2px;
+  top: 0px;
 }
 .section .container.smrbsmap {
   position: relative;
