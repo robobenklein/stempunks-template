@@ -2010,3 +2010,47 @@ div#navigation-items {
 .tab-navs {
   padding: 0px !important;
 }
+
+.page-header > h2 {
+  display: inline-block;
+  font-size: 60px;
+  font-weight: 300;
+}
+.page-header > h2 {
+  display: block;
+  margin: 100px 0 50px 0;
+  color: #fcfcfc;
+  font-size: 50px;
+  line-height: 50px;
+}
+.page-header > h2:hover {
+  border-color: #72a329;
+  border-bottom: 0px;
+}
+
+.page-header {
+  text-align: center;
+  padding: 0;
+  z-index: 2;
+}
+.page-header .row {
+  margin: 0;
+}
+.page-header {
+  position: relative;
+  padding: 0;
+}
+.page-header {
+  display: block;
+  margin: 150px 0 50px 0;
+  color: #fcfcfc;
+  font-size: 50px;
+  line-height: 50px;
+}
+.page-header {
+  text-align: center;
+  left: 0;
+  right: 0;
+  bottom: 40px;
+  margin: 0;
+}
