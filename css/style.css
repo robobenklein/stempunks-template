@@ -2022,12 +2022,11 @@ div#navigation-items {
   color: #fcfcfc;
   font-size: 50px;
   line-height: 50px;
+  border-bottom: 0px transparent;
 }
 .page-header > h2:hover {
   border-color: #72a329;
-  border-bottom: 0px;
 }
-
 .page-header {
   text-align: center;
   padding: 0;
