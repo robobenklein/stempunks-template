@@ -16,13 +16,13 @@
                 <filename>logo.webm</filename>
                 <filename>favicon.ico</filename>
                 <folder>css</folder>
-                <folder>images</folder>
+                <!-- <folder>images</folder> -->
                 <folder>js</folder>
                 <folder>fa</folder>
 		            <folder>language</folder>
         </files>
         <media folder="media" destination="stempunk">
-                <folder>images</folder>
+                <!-- <folder>images</folder> -->
                 <folder>fa</folder>
         </media>
         <positions>
