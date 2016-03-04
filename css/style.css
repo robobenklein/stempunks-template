@@ -2002,3 +2002,11 @@ body.red .social-media a {
 .nav>li>a:hover, .nav>li>a:focus {
     background-color: transparent;
 }
+
+div#navigation-items {
+    text-transform: uppercase;
+}
+
+.tab-navs {
+  padding: 0px !important;
+}

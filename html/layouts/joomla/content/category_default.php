@@ -31,9 +31,17 @@ $tagsData  = $displayData->get('category')->tags->itemTags;
                         </h1>
                 <?php endif; ?>
                 <?php if($params->get('show_category_title', 1)) : ?>
-                        <h2>
-                                <?php echo JHtml::_('content.prepare', $displayData->get('category')->title, '', $extension.'.category'); ?>
-                        </h2>
+    <div id="home" class="section clear">
+    <div class="wrapper">
+    <div class="row">
+    <div class="col-md-2 col-sm-2 col-xs-12"></div>
+    <div class="col-md-8 col-sm-8 col-xs-12">
+                        <h1><?php echo JHtml::_('content.prepare', $displayData->get('category')->title, '', $extension.'.category'); ?></h1>
+    </div>
+    <div class="col-md-2 col-sm-2 col-xs-12"></div>
+    </div>
+    </div>
+    </div>
                 <?php endif; ?>
                 <?php if ($displayData->get('show_tags', 1)) : ?>
                         <?php echo JLayoutHelper::render('joomla.content.tags', $tagsData); ?>
@@ -62,4 +70,3 @@ $tagsData  = $displayData->get('category')->tags->itemTags;
                 <?php endif; ?>
         </div>
 </div>
-
