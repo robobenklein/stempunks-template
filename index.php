@@ -125,11 +125,13 @@ $doc->addScript('templates/' .$this->template. '/js/init.js');
       </div>
     </div>
   </div>
-  <header id="top" class="landing">
-    <div class="text-vertical-center">
-      <jdoc:include type="modules" name="position-0" style="none" />
-    </div>
-  </header>
+  <?php if ($this->countModules('position-0')) : ?>
+    <header id="top" class="landing">
+      <div class="text-vertical-center">
+        <jdoc:include type="modules" name="position-0" style="none" />
+      </div>
+    </header>
+  <?php endif; ?>
   <div class="tab-content">
     <div class="tab-pane active slide-left in" id="landing_tab">
       <div id="services" class="section clear">
