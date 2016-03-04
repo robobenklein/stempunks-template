@@ -20,6 +20,7 @@
                 <folder>js</folder>
                 <folder>fa</folder>
 		            <folder>language</folder>
+                <folder>html</folder>
         </files>
         <media folder="media" destination="stempunk">
                 <!-- <folder>images</folder> -->
